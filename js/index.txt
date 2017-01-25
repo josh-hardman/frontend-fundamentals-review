@@ -21,6 +21,7 @@ Created files
 Callback Functions, aka Higher-order Functions
 Closures
 IIFE
+Modular System
 
 
 
@@ -29,7 +30,7 @@ Need to create
 --------------
 Event Bubbling
 Prototypal Inheritance
-Modular System
+
 Promise
 Hoisting
 Variable Scope
