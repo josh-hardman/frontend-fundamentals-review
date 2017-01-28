@@ -15,30 +15,29 @@ Data Types
 Dynamic Typing
 
 
-------------
+-------------
 Created files
 -------------
 Callback Functions, aka Higher-order Functions
 Closures
 IIFE
-Modular System
+Modular Pattern
+This
+  Types of Binding
+    Implicit( Whatever is left of the . at call time)
+    Explicit( bind, call, and apply )
+    New/Constructor( The function )
+    Window
+Hoisting
 
-
-
-------------
+--------------
 Need to create
 --------------
 Event Bubbling
 Prototypal Inheritance
-
 Promise
-Hoisting
+
 Variable Scope
-This
-Types of Binding
-  Implicit( Whatever is left of the . at call time)
-  Explicit( bind, call, and apply )
-  New/Constructor( The function )
-  Window
+
 Asynchronous Programming
 Function Expressions vs Function Declarations
