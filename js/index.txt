@@ -11,9 +11,7 @@ Data Types
   Objects
     Objects
 
-
 Dynamic Typing
-
 
 -------------
 Created files
@@ -29,6 +27,9 @@ This
     New/Constructor( The function )
     Window
 Hoisting
+Prototypal Inheritance
+Currying
+Function Expressions vs Function Declarations
 
 --------------
 Need to create
@@ -36,8 +37,6 @@ Need to create
 Event Bubbling
 Prototypal Inheritance
 Promise
-
 Variable Scope
 
 Asynchronous Programming
-Function Expressions vs Function Declarations

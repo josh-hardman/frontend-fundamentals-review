@@ -1,5 +1,5 @@
 // The syntax parser goes through the file and sets aside memory space for the variables
-// 
+//
 
 (function() {
   var foo = 1;

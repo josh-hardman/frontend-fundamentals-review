@@ -1,21 +1,20 @@
-var user = {
-  tournament:"The Masters",
-  data      :[
-    {name:"T. Woods", age:37},
-    {name:"P. Mickelson", age:43}
-  ],
-  clickHandler:function () {
-  // the use of this.data here is fine, because "this" refers to the user object, and data is a property on the user object.​
-    this.data.forEach (function (person) {
-      // But here inside the anonymous function (that we pass to the forEach method), "this" no longer refers to the user object.​
-      // This inner function cannot access the outer function's "this"​
-
-      console.log ("What is This referring to? " + this); //[object Window]​, if in STRICT MODE it is undefined
-
-      // console.log (person.name + " is playing at " + this.tournament);
-      // T. Woods is playing at undefined​
-      // P. Mickelson is playing at undefined​
-    })
+var human = {
+  species: 'human',
+  saySpecies: function() {
+    console.log(this.species);
+    console.log(this);
+  },
+  sayName: function() {
+    console.log(this.name);
   }
 }
-user.clickHandler(); // What is "this" referring to? [object Window]
+
+var musician = Object.create(human);
+
+musician.playInstrument = function() {
+  console.log("plays..." + this.instrument);
+};
+
+var will = Object.create(musician);
+will.name = 'will';
+will.instrument = 'drums';

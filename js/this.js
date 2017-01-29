@@ -57,7 +57,7 @@
     // the use of this.data here is fine, because "this" refers to the user object, and data is a property on the user object.​
 ​
     this.data.forEach (function (person) { // forEach allows you to pass a this reference
-      
+
       // But here inside the anonymous function (that we pass to the forEach method), "this" no longer refers to the user object.​
       // This inner function cannot access the outer function's "this"​
 
@@ -72,3 +72,17 @@
   }
 ​
   user.clickHandler(); // What is "this" referring to? [object Window]
+
+
+
+
+
+// New key word
+
+var Person = function( name ) {
+  this.name = name;
+};
+
+
+// this refers to the john object
+var john = new Person('John');
